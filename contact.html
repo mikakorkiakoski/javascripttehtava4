@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/themestyles.css">
+
+    <title>AssignmentFive</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <button id="lightThemeButton">Light Theme</button>
+                <button id="darkThemeButton">Dark Theme</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <p>Have questions or suggestions? Feel free to reach out to us.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="reset" value="Submit">
+        </form>
+    </main>
+    <script src="theme.js"></script>
+</body>
+
+</html>
