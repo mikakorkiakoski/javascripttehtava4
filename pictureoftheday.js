@@ -17,6 +17,8 @@ async function displayPictureOfTheDay() {
     if (imageUrl) {
         const imageElement = document.createElement('img');
         imageElement.src = imageUrl;
+        imageElement.style.maxWidth = '500px';
+        imageElement.style.height = 'auto';
         pictureOfTheDayContainer.appendChild(imageElement);
     } else {
         pictureOfTheDayContainer.innerHTML = '<p>Failed to fetch the picture of the day.</p>';
